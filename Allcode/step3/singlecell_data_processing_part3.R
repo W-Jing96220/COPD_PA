@@ -22,9 +22,7 @@ dim(data_part_byGroup_tmp_MAGIC_processed)
 cat("\n\n")
 
 cat("Read in Meta...\n")
-######
-meta <- read.delim
-###### need change here
+meta <- read.delim("/lustre06/project/6040537/jingw/GSE136831_AllCells.Samples.CellType.MetadataTable.txt")
 diseaseType <- meta$Disease_Identity
 unique(diseaseType) # "Control" "IPF" "COPD"
 cat("\n\n")
